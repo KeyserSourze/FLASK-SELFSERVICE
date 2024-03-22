@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flask-selfservice"
+version = "0.1.0"
+description = ""
+authors = ["KeyserSourze <120037906+KeyserSourze@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.2"
+python-dotenv = "^1.0.1"
+pydantic = "^2.6.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

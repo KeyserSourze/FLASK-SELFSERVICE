@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  flask:
+    build:
+      context: .
+    ports:
+      - "80:5000"  # Forward port 80 on the host to port 5000 in the container
+    volumes:
+      - ./app:/app/app  # Map the local "app" directory to the "app" directory in the container
+      - ./app/templates:/app/templates  # Map the local "templates" directory to the "templates" directory in the container
+      - ./app/static:/app/static  # Map the local "templates" directory to the "templates" directory in the container
